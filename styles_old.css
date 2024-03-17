@@ -1,0 +1,129 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 90vh;
+}
+
+.leftBox, .rightBox {
+    flex: 1 1 0%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+    background-color: rgb(255, 255, 255);
+    max-width: 400px;
+}
+
+.leftBox {
+    margin-right: 10px;
+}
+
+.rightBox {
+    margin-left: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(247, 247, 247);
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 50px;
+}
+
+form {
+    margin: 0px auto;
+    max-width: 400px;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: rgb(85, 85, 85);
+    font-weight: bold;
+}
+
+button[type="button"], input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    background-color: rgb(0, 123, 255);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+}
+
+button[type="button"]:hover, input[type="submit"]:hover {
+    background-color: rgb(0, 86, 179);
+}
+
+input[type="number"], input[type="text"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    transition: all 0.3s ease 0s;
+}
+
+input[type="number"]:focus, input[type="text"]:focus {
+    border-color: rgb(0, 123, 255);
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: rgb(0, 123, 255);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(0, 86, 179);
+}
+
+
+
+.biometric {
+    text-align: center;
+}
+
+#date, #time {
+    /* font-size: 18px; */
+    color: rgb(51, 51, 51);
+    /* margin-bottom: 10px; */
+    text-align: right;
+}
+
+#BoothMemberDisplay {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    #BoothMemberDisplay td, #BoothMemberDisplay th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    #BoothMemberDisplay tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #BoothMemberDisplay tr:hover {
+        background-color: #ddd;
+    }
+
+    #BoothMemberDisplay th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #04AA6D;
+        color: white;
+    }
